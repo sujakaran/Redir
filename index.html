@@ -1,33 +1,33 @@
-<!DOCTYPE html>
-<html>
-<body onload="showPosition()">
+<HTML>
 
-<button onclick="getLocation()">Your coordinates are:</button>
+<HEAD>
 
-<p id="Test"></p>
-<script>
-var x = document.getElementById("Test");
-function getLocation() {
-    //Check if Geolocation is supported 
-    if (navigator.geolocation) {
-	  //If supported, run the getCurrentPosition() method
-	  //If the getCurrentPosition() method is successful, it returns a coordinates object to the function specified in the parameter (showPosition)
-        navigator.geolocation.getCurrentPosition(showPosition);
-    } else { 
-	  //If not, display a message to the user
-        x.innerHTML = "Geolocation is not supported by this browser.";
-    }
-} 
+<TITLE>Welcome to Suja's Site</TITLE>
 
-//The showPosition() function outputs the Latitude and Longitude
-function showPosition(position) {
-    var mylat = position.coords.latitude;
-    var mylong = position.coords.longitude;
-    
-document.write('<iframe src="https://maps.google.com/maps?q='+mylat+','+mylong+'&hl=es&z=14&amp;output=embed" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>');
-}
+</HEAD>
 
-</script>
+<BODY BGCOLOR="FFFFFF">
 
-</body>
-</html>
+<CENTER><IMG SRC="clouds.jpg" ALIGN="BOTTOM"> </CENTER>
+
+<HR>
+
+<a href="http://Daraz.lk">Link Name</a>
+
+Is a link to our daraz.lk
+
+<H1>Daraz</H1>
+
+<H2>This is a Medium Header</H2>
+
+Send me mail at <a href="Sujakarann@gmail.com">
+
+Suja@gmail.com</a>.
+
+<HR>
+
+</BODY>
+
+</HTML>
+
+ 
